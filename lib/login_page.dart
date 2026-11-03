@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import 'test.dart';
-
+/*push -> بتفتح الصفحه الجديده فوق الصفحه الحالية في stack  ومش بتعمل dispose ليها واقدر ارجعلها لما اعمل pop
+go -> بت respect url بتنفذ ال url بالظبط ولو مثلا عامله "home/" هتروح للهوم علطول ولو عملت pop هيديني ايرور
+*/
 /*
 Part 1: super.key
 
