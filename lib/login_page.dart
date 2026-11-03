@@ -2,8 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import 'test.dart';
-/*push -> بتفتح الصفحه الجديده فوق الصفحه الحالية في stack  ومش بتعمل dispose ليها واقدر ارجعلها لما اعمل pop
-go -> بت respect url بتنفذ ال url بالظبط ولو مثلا عامله "home/" هتروح للهوم علطول ولو عملت pop هيديني ايرور
+/*
+push() -> Opens a new page on top of the current page in the navigation
+stack. The previous page stays in the stack and is not disposed,
+so we can return to it using pop().
+
+go() -> Navigates directly to the specified route and updates the
+navigation stack. It does not work like push(), so calling pop()
+may cause an error if there is no previous route to return to.
 */
 /*
 Part 1: super.key
